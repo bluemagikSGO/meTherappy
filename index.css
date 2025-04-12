@@ -3,11 +3,11 @@
   padding: 0;
   box-sizing: border-box;
 }
-.sticky-wrapper {
+/* .sticky-wrapper {
   position: relative;
-  max-height: 100vh; /* Adjust this depending on how tall your slideshow is */
+  max-height: 100vh;
   overflow: hidden;
-}
+} */
 
 header {
   position: sticky;
@@ -117,6 +117,7 @@ img {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   padding-left: 10px;
+  background-color: #f4faff;
 }
 
 .about h1{
@@ -208,7 +209,8 @@ img {
 .testimonials h2 {
   color: #005f99;
   margin-bottom: 2rem;
-  font-size: 2rem;
+  font-size: 40px;
+  font-weight: bolder;
 }
 
 .testimonial-slider {
@@ -243,14 +245,15 @@ img {
   background-color: #f4faff;
   padding: 3rem 1rem;
   max-width: 100%;
-  margin: auto;
+  
   font-family: "Montserrat", sans-serif;
 }
 
 .faq-item button{
   text-align: center;
-  width: 1200px;
-  margin-left: 250px;
+  width: 1000px;
+  margin-left: 300px;
+  font-family: "Montserrat", sans-serif;
   
 }
 
@@ -262,6 +265,9 @@ img {
   text-align: center;
   margin-bottom: 2rem;
   color: #005f99;
+  font-size: 40px;
+  font-weight: bolder;
+  
 }
 
 .faq-question {
@@ -294,4 +300,11 @@ img {
   color: #555;
 }
 
+/* footer */
+
+footer{
+  font-family: "Montserrat", sans-serif;
+  background-color: #f4faff;
+  
+}
 
