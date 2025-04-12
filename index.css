@@ -115,7 +115,7 @@ img {
 .about{
   padding-top: 50px;
   font-family: "Montserrat", sans-serif;
-  font-size: 14px;
+  font-size: 12px;
   padding-left: 10px;
   background-color: #f4faff;
 }
@@ -130,8 +130,26 @@ img {
 }
 
 .about p{
-  font-size: 30px;
+  font-size: 25px;
 }
+
+.fixed-icon{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 2rem;
+  display: none; 
+  z-index: 1000;
+  cursor: pointer;
+  font-size: 45px;
+  
+}
+
+.fixed-icon a{
+  color: #005f99;
+}
+
+
 
 /* Therapist slider */
 
@@ -245,6 +263,7 @@ img {
   background-color: #f4faff;
   padding: 3rem 1rem;
   max-width: 100%;
+  /* padding-bottom: 700px; */
   
   font-family: "Montserrat", sans-serif;
 }
@@ -259,6 +278,7 @@ img {
 
 .faq-item p{
   text-align: center;
+  background-color: #f4faff;
 }
 
 .faq-section h2 {
@@ -294,10 +314,14 @@ img {
 .faq-answer {
   display: none;
   padding: 0.5rem 1rem;
-  background-color: #ffffff;
+  background-color: #f4faff;
   border-radius: 0 0 8px 8px;
   margin-bottom: 1rem;
   color: #555;
+}
+
+.faq-answer p{
+  background-color: #f4faff;
 }
 
 /* footer */
@@ -305,6 +329,11 @@ img {
 footer{
   font-family: "Montserrat", sans-serif;
   background-color: #f4faff;
+  text-align: center;
   
 }
 
+.meTherappy{
+  font-size: 20px;
+  color: #005f99;
+}
