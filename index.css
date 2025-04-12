@@ -3,11 +3,26 @@
   padding: 0;
   box-sizing: border-box;
 }
+.sticky-wrapper {
+  position: relative;
+  max-height: 100vh; /* Adjust this depending on how tall your slideshow is */
+  overflow: hidden;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: white; /* Optional: keeps the navbar readable */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
 
 .nav-cont{
+  position: sticky;
+  top: 0;
   display: flex;
   justify-content: space-between;
-  background-color: gainsboro;
+  background-color: rgba(239, 231, 231, 0.367);
   padding-left: 10px;
   padding-right: 100px;
   height: 80px;
@@ -18,12 +33,9 @@
 
 .nav-cont a{
   text-decoration: none;
+  color: black;
 }
 
-.nav-cont a:hover{
-  transform: translateX();
-  transition: 0.5s ease;
-}
 
 .nav-list{
   display: flex;
@@ -31,12 +43,255 @@
   font-size: 24px;
 }
 
+.nav-list li:hover {
+  transform: scale(1.1);
+  transition: 0.5s ease;
+}
+
 .nav-list li {
   list-style: none;
 }
 
 .logo img{
-  height: 150px;
+  height: 170px;
   width: auto;
   
 }
+
+/* slider images */
+
+.slideshow-container {
+  width: 100%;
+  height: 698px;
+  position: relative;
+  overflow: hidden;
+  
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  animation: fade 9s infinite;
+}
+
+.slide:nth-child(1) {
+  animation-delay: 0s;
+}
+.slide:nth-child(2) {
+  animation-delay: 3s;
+}
+.slide:nth-child(3) {
+  animation-delay: 6s;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/* About */
+.about{
+  padding-top: 50px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  padding-left: 10px;
+}
+
+.about h1{
+  padding-bottom: 20px;
+  font-size: 40px;
+  font-weight: bolder;
+  text-align: center;
+  color: #005f99;
+
+}
+
+.about p{
+  font-size: 30px;
+}
+
+/* Therapist slider */
+
+.therapist-slider {
+  padding: 2rem;
+  background-color: #f9fbfd;
+  text-align: center;
+}
+
+.therapist-slider h2 {
+  font-size: 40px;
+  font-weight: bolder;
+  margin-bottom: 1.5rem;
+  color: #005f99;
+  font-family: "Montserrat", sans-serif;
+}
+
+.slider-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 1rem;
+}
+
+.therapist-card {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 1rem;
+  min-width: 217px;
+  max-width: 150px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.therapist-card img {
+  width: 98%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.therapist-card h3 {
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.therapist-card p {
+  color: #555;
+  font-size: 0.9rem;
+}
+
+
+.therapist-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.therapist-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+/* testimonials */
+
+.testimonials {
+  background-color: #f4faff;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.testimonials h2 {
+  color: #005f99;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.testimonial-slider {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+  overflow: hidden;
+  height: 150px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.testimonial {
+  display: none;
+  font-size: 1.2rem;
+  color: #333;
+  transition: opacity 0.5s ease;
+}
+
+.testimonial.active {
+  display: block;
+}
+
+.testimonial h4 {
+  margin-top: 1rem;
+  color: #005f99;
+  font-weight: normal;
+}
+
+/* FAQ */
+
+.faq-section {
+  background-color: #f4faff;
+  padding: 3rem 1rem;
+  max-width: 100%;
+  margin: auto;
+  font-family: "Montserrat", sans-serif;
+}
+
+.faq-item button{
+  text-align: center;
+  width: 1200px;
+  margin-left: 250px;
+  
+}
+
+.faq-item p{
+  text-align: center;
+}
+
+.faq-section h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #005f99;
+}
+
+.faq-question {
+  background-color: #ffffff;
+  color: #333;
+  padding: 1rem;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.faq-question:hover {
+  background-color: #e0f0ff;
+}
+
+.faq-answer {
+  display: none;
+  padding: 0.5rem 1rem;
+  background-color: #ffffff;
+  border-radius: 0 0 8px 8px;
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+
