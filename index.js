@@ -190,6 +190,12 @@ let currentIndex = 0;
       });
   });
 
+  // terms and condition alert
+
+  $('.tc-alert').click(function (){
+    alert('By creating an account on meTherappy, you agree to our Terms and Conditions. meTherappy is a mental health platform that connects users with licensed or certified therapists for personal support and wellness growth. It is not intended for emergency services or crisis intervention. If you are experiencing a mental health "emergency", please contact local emergency services immediately. To use meTherappy, you must be at least 18 years old or the legal age of majority in your region, and all information you provide during signup must be accurate. You agree to keep your account secure and to use the platform respectfully. Therapists on meTherappy operate independently and are responsible for the care they provide; meTherappy serves only as a digital facilitator and does not offer clinical services itself. All payments, subscription fees, and session bookings are subject to our pricing structure and refund policy, and cancellations must be made at least 24 hours in advance to avoid charges. Your personal information and sessions are handled with confidentiality and care in accordance with our Privacy Policy. Any misuse of the platform — including harassment, hate speech, or illegal activity — may result in suspension or permanent removal from meTherappy. We reserve the right to update these terms at any time, and by continuing to use the platform after such updates, you accept the revised terms. For questions or support, contact us at support@metherappy.com. By proceeding, you confirm that you have read, understood, and agreed to these Terms and Conditions.')
+  })
+
 
 
  

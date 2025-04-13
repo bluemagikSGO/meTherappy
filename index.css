@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body{
+  background-color: #f4faff;
+}
+
 header {
   position: sticky;
   top: 0;
@@ -41,6 +45,11 @@ header {
 .nav-list li:hover {
   transform: scale(1.1);
   transition: 0.5s ease;
+ 
+}
+
+.nav-list li a:hover{
+  color:#005f99;
 }
 
 .nav-list li {
@@ -63,6 +72,7 @@ header {
 
 #login-link:hover {
   text-decoration: underline; /* Underline on hover */
+  color: black;
 }
 
 .modal {
@@ -210,7 +220,7 @@ header {
 
 /* sign up modal */
 #signup-link {
-  color:#005f99;; /* Blue link color */
+  color:#005f99; /* Blue link color */
   cursor: pointer;
   text-decoration: none;
   font-weight: bolder;
@@ -218,6 +228,7 @@ header {
 
 #signup-link:hover {
   text-decoration: underline; /* Underline on hover */
+  color: black;
 }
 
 #signup-modal {
@@ -362,15 +373,35 @@ header {
 
 #t-c{
   display: flex;
-  justify-content: center;
-  
+  align-items: center;
 }
+
+.tc-alert:hover{
+  border-bottom: 1px solid black;
+}
+
+.signup-therapist a{
+  color: #005f99;
+}
+
+.signup-therapist :hover{
+  border-bottom: 1px solid #005f99;
+}
+
 
 #tc{
   margin-top: 12px;
   margin-right: 150px;
   height: 20px;
   width: 25px;
+}
+
+.t-checkm{
+  display: flex;
+  justify-content: right;
+  gap: 30px;
+  align-items: center;
+  padding-left: 130px;
 }
 /* slider images */
 
@@ -626,6 +657,26 @@ img {
   transition: background-color 0.3s ease;
   box-shadow: 0 2px 6px rgba(0,0,0,0.05);
 }
+.faq-pricing {
+  background-color: #ffffff;
+  color: #333;
+  padding: 1rem;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.faq-pricing:hover{
+  background-color: #e0f0ff;
+}
 
 .faq-question:hover {
   background-color: #e0f0ff;
@@ -656,4 +707,75 @@ footer{
 .meTherappy{
   font-size: 20px;
   color: #005f99;
+}
+
+
+/* pricing */
+.header{
+  background-color: #005f99;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+      font-family: "Montserrat", sans-serif;
+}
+
+.pricing-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 3rem 1rem;
+  gap: 2rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.plan {
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  width: 300px;
+  padding: 2rem;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.plan:hover {
+  transform: translateY(-5px);
+}
+
+.plan h2 {
+  color: #005f99;
+  margin-bottom: 0.5rem;
+}
+
+.price {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 1rem 0;
+  
+}
+
+.features {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0;
+}
+
+.features li {
+  margin-bottom: 0.75rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color:#005f99;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #005f99;
 }
