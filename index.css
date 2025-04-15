@@ -403,6 +403,49 @@ header {
   align-items: center;
   padding-left: 130px;
 }
+
+/* Hamburger menu hidden by default */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger span {
+  width: 50px;
+  height: 5px;
+  background: black;
+  border-radius: 2px;
+}
+
+/* Responsive: Show hamburger and hide links */
+@media (max-width: 768px) {
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    background: #0080ff;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+  }
+
+
+
+  .nav-list.active {
+    display: flex;
+  }
+.logsign{
+  display: none;
+}
+  .hamburger {
+    display: flex;
+  }
+}
+
 /* slider images */
 
 .slider {
@@ -492,6 +535,7 @@ header {
   padding: 2rem;
   background-color: #f9fbfd;
   text-align: center;
+  overflow: hidden;
 }
 
 .therapist-slider h2 {
@@ -506,13 +550,15 @@ header {
   display: flex;
   overflow-x: auto;
   gap: 1rem;
-  scroll-snap-type: x mandatory;
+  /* scroll-snap-type: x mandatory; */
+  width: max-content;
   padding-bottom: 1rem;
+  animation: scroll-left 20s linear infinite;
 }
 
 .therapist-card {
   flex: 0 0 auto;
-  scroll-snap-align: start;
+  /* scroll-snap-align: start; */
   background-color: white;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
@@ -548,6 +594,15 @@ header {
 .therapist-card:hover {
   transform: scale(1.05);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 
