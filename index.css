@@ -412,12 +412,6 @@ header {
   gap: 5px;
 }
 
-.hamburger span {
-  width: 50px;
-  height: 5px;
-  background: black;
-  border-radius: 2px;
-}
 
 /* Responsive: Show hamburger and hide links */
 @media (max-width: 768px) {
@@ -442,7 +436,7 @@ header {
   display: none;
 }
   .hamburger {
-    display: flex;
+    display: block;
   }
 }
 
