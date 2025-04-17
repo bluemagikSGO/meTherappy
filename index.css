@@ -6,6 +6,7 @@
 
 body{
   background-color: #f4faff;
+  position: relative;
 }
 
 header {
@@ -406,10 +407,8 @@ header {
 
 /* Hamburger menu hidden by default */
 .hamburger {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-  gap: 5px;
+ display: none;
+ cursor: pointer;
 }
 
 
@@ -427,7 +426,12 @@ header {
     padding: 1rem 0;
   }
 
+  .hamburger {
+    display: block;
+    font-size: 40px;
+  }
 
+  
 
   .nav-list.active {
     display: flex;
@@ -435,9 +439,6 @@ header {
 .logsign{
   display: none;
 }
-  .hamburger {
-    display: block;
-  }
 }
 
 /* slider images */
