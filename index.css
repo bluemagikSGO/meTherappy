@@ -413,11 +413,11 @@ header {
 
 
 /* Responsive: Show hamburger and hide links */
-@media (max-width: 768px) {
+@media (max-width: 500px) {
   .nav-list {
     display: none;
     flex-direction: column;
-    background-color: #3b83f6ea;
+    background-color: #5993f1;
     position: absolute;
     top: 70px;
     right: 0;
@@ -430,6 +430,10 @@ header {
 
   .nav-list a{
     color: whitesmoke;
+  }
+
+  .nav-list a.active{
+    color:black
   }
 
   .hamburger {
@@ -451,6 +455,7 @@ header {
 
   .nav-list.active {
     display: flex;
+    
   }
 .logsign{
   display: none;
