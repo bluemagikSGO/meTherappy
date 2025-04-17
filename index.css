@@ -417,13 +417,19 @@ header {
   .nav-list {
     display: none;
     flex-direction: column;
-    background: #0080ff;
+    background-color: #3b83f6ea;
     position: absolute;
     top: 70px;
     right: 0;
     width: 100%;
     text-align: center;
+    font-family: "Ubuntu", sans-serif;
     
+    
+  }
+
+  .nav-list a{
+    color: whitesmoke;
   }
 
   .hamburger {
@@ -435,6 +441,7 @@ header {
 
 
   .logo img{
+    display: block;
     height: 110px;
     width: 100px;
     

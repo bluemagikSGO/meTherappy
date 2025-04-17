@@ -199,10 +199,10 @@ let currentIndex = 0;
 
 // hamburger
 
-// const hamburger = document.getElementById('hamburger');
-//   const navList = document.querySelector('.nav-list');
+const hamburger = document.getElementById('hamburger');
+const navList = document.querySelector('.nav-list');
 
-//   hamburger.addEventListener('click', () => {
-//     navList.classList.toggle('active');
-//   });
+  hamburger.addEventListener('click', () => {
+    navList.classList.toggle('active');
+  });
  
