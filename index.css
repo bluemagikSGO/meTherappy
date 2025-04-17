@@ -430,7 +430,14 @@ header {
     display: block;
     font-size: 40px;
     position: absolute;
-    right: 50px;
+    right: 40px;
+  }
+
+
+  .logo img{
+    height: 130px;
+    width: auto;
+    
   }
 
   
