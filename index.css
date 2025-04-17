@@ -423,12 +423,14 @@ header {
     right: 0;
     width: 100%;
     text-align: center;
-    padding: 1rem 0;
+    
   }
 
   .hamburger {
     display: block;
     font-size: 40px;
+    position: absolute;
+    right: 50px;
   }
 
   
