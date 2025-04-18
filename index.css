@@ -1,10 +1,11 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 
-body{
+body {
   background-color: #f4faff;
   position: relative;
 }
@@ -17,7 +18,7 @@ header {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
 
-.nav-cont{
+.nav-cont {
   position: sticky;
   top: 0;
   display: flex;
@@ -31,13 +32,12 @@ header {
   font-weight: bolder;
 }
 
-.nav-cont a{
+.nav-cont a {
   text-decoration: none;
   color: black;
 }
 
-
-.nav-list{
+.nav-list {
   display: flex;
   gap: 70px;
   font-size: 24px;
@@ -46,26 +46,24 @@ header {
 .nav-list li:hover {
   transform: scale(1.1);
   transition: 0.5s ease;
- 
 }
 
-.nav-list li a:hover{
-  color:#005f99;
+.nav-list li a:hover {
+  color: #005f99;
 }
 
 .nav-list li {
   list-style: none;
 }
 
-.logo img{
+.logo img {
   height: 170px;
   width: auto;
-  
 }
 
 /* login modal */
 #login-link {
-  color:#005f99; /* Blue link color */
+  color: #005f99; /* Blue link color */
   cursor: pointer;
   text-decoration: none;
   font-weight: bolder;
@@ -85,21 +83,20 @@ header {
   width: 100%;
   height: 100%;
   overflow: auto; /* Enable scrolling if content is too long */
-  background-color: rgba(0,0,0,0.5); /* Semi-transparent background */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
   justify-content: center;
   align-items: center;
   justify-content: flex-end; /* Change to flex-end to move to the right */
   align-items: center;
   padding-right: 90px; /* Add some padding to the right edge */
   padding-bottom: 120px;
-  
 }
 
 .modal-content {
-  background-color: #f4faff; 
+  background-color: #f4faff;
   padding: 24px;
   border-radius: 8px; /* Rounded corners */
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
   width: 400px; /* Increased width for better layout */
   max-width: 90%; /* Responsive width */
   position: relative; /* Needed for absolute positioning of close button */
@@ -137,7 +134,6 @@ header {
   color: #d11a2b; /* Slightly darker on hover */
 }
 
-
 .modal-body {
   margin-bottom: 20px;
 }
@@ -166,7 +162,6 @@ header {
   border-color: #3b82f6; /* Tailwind's border-blue-500 on focus */
   box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2); /* голубая тень */
 }
-
 
 .modal-footer {
   display: flex;
@@ -221,7 +216,7 @@ header {
 
 /* sign up modal */
 #signup-link {
-  color:#005f99; /* Blue link color */
+  color: #005f99; /* Blue link color */
   cursor: pointer;
   text-decoration: none;
   font-weight: bolder;
@@ -241,19 +236,18 @@ header {
   width: 100%;
   height: 100%;
   overflow: auto; /* Enable scrolling if content is too long */
-  background-color: rgba(0,0,0,0.5); /* Semi-transparent background */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
   justify-content: flex-end; /* Align to the right */
   align-items: center;
   padding-right: 90px;
   padding-top: 200px;
-  
 }
 
 #signup-modal .modal-content {
-  background-color: #f4faff; 
+  background-color: #f4faff;
   padding: 24px;
   border-radius: 8px; /* Rounded corners */
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
   width: 400px; /* Increased width for better layout */
   max-width: 90%; /* Responsive width */
   position: relative; /* Needed for absolute positioning of close button */
@@ -372,32 +366,31 @@ header {
   border: 1px solid #fecaca;
 }
 
-#t-c{
+#t-c {
   display: flex;
   align-items: center;
 }
 
-.tc-alert:hover{
+.tc-alert:hover {
   border-bottom: 1px solid black;
 }
 
-.signup-therapist a{
+.signup-therapist a {
   color: #005f99;
 }
 
-.signup-therapist :hover{
+.signup-therapist :hover {
   border-bottom: 1px solid #005f99;
 }
 
-
-#tc{
+#tc {
   margin-top: 12px;
   margin-right: 150px;
   height: 20px;
   width: 25px;
 }
 
-.t-checkm{
+.t-checkm {
   display: flex;
   justify-content: right;
   gap: 30px;
@@ -407,14 +400,13 @@ header {
 
 /* Hamburger menu hidden by default */
 .hamburger {
- display: none;
- cursor: pointer;
+  display: none;
+  cursor: pointer;
 }
 
-
 /* Responsive: Show hamburger and hide links */
-@media (max-width: 600px) {
-  body{
+@media (max-width: 768px) {
+  body {
     width: 100%;
   }
   .nav-list {
@@ -428,16 +420,14 @@ header {
     text-align: center;
     font-family: "Ubuntu", sans-serif;
     border-radius: 10px;
-    
-    
   }
 
-  .nav-list a{
+  .nav-list a {
     color: whitesmoke;
   }
 
-  .nav-list a:active{
-    color:black
+  .nav-list a:active {
+    color: black;
   }
 
   .hamburger {
@@ -447,26 +437,37 @@ header {
     right: 40px;
   }
 
-
-  .logo img{
+  .logo img {
     display: block;
     height: 110px;
     width: 100px;
-    
   }
 
-  .nav-list li a:hover{
-    color:black;
+  .nav-list li a:hover {
+    color: black;
   }
-  
 
   .nav-list.active {
     display: flex;
-    
   }
-.logsign{
-  display: none;
-}
+  .logsign {
+    display: none;
+  }
+
+  .faq-item button {
+    font-size: 1rem;
+    width: 90%;
+  }
+
+  .faq-answer p {
+    font-size: 0.95rem;
+    padding: 0 1rem;
+  }
+
+  .about p {
+    font-size: 16px;
+    text-align: left;
+  }
 }
 
 /* slider images */
@@ -503,54 +504,60 @@ header {
 }
 
 @keyframes fade {
-  0% { opacity: 0; }
-  5% { opacity: 1; }
-  45% { opacity: 1; }
-  50% { opacity: 0; }
-  100% { opacity: 0; }
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
-
 /* About */
-.about{
+.about {
   padding-top: 50px;
   font-family: "Montserrat", sans-serif;
   font-size: 12px;
   padding-left: 10px;
+  padding-right: 10pxs;
   background-color: #f4faff;
 }
 
-.about h1{
+.about h1 {
   padding-bottom: 20px;
   font-size: 40px;
   font-weight: bolder;
   text-align: center;
   color: #005f99;
-
 }
 
-.about p{
+.about p {
   font-size: 25px;
   text-align: justify;
 }
 
-.fixed-icon{
+.fixed-icon {
   position: fixed;
   bottom: 20px;
   right: 20px;
   font-size: 2rem;
-  display: none; 
+  display: none;
   z-index: 1000;
   cursor: pointer;
   font-size: 45px;
-  
 }
 
-.fixed-icon a{
+.fixed-icon a {
   color: #005f99;
 }
-
-
 
 /* Therapist slider */
 
@@ -584,7 +591,7 @@ header {
   /* scroll-snap-align: start; */
   background-color: white;
   border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   padding: 1rem;
   min-width: 217px;
   max-width: 150px;
@@ -609,7 +616,6 @@ header {
   font-size: 0.9rem;
 }
 
-
 .therapist-card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -627,7 +633,6 @@ header {
     transform: translateX(-50%);
   }
 }
-
 
 /* testimonials */
 
@@ -653,7 +658,7 @@ header {
   font-family: "Montserrat", sans-serif;
 }
 
-.testimonial-slider p{
+.testimonial-slider p {
   font-size: 30px;
 }
 
@@ -663,7 +668,6 @@ header {
   color: #333;
   transition: opacity 0.5s ease;
 }
-
 
 .testimonial.active {
   display: block;
@@ -682,19 +686,21 @@ header {
   padding: 3rem 1rem;
   max-width: 100%;
   /* padding-bottom: 700px; */
-  
+
   font-family: "Montserrat", sans-serif;
 }
 
-.faq-item button{
+.faq-item button {
   text-align: center;
-  width: 1000px;
-  margin-left: 300px;
+  max-width: 100%;
+  width: 90%;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 1.5rem;
   font-family: "Montserrat", sans-serif;
-  
 }
 
-.faq-item p{
+.faq-item p {
   text-align: center;
   background-color: #f4faff;
 }
@@ -705,7 +711,6 @@ header {
   color: #005f99;
   font-size: 40px;
   font-weight: bolder;
-  
 }
 
 .faq-question {
@@ -722,7 +727,7 @@ header {
   border-radius: 8px;
   margin-bottom: 0.5rem;
   transition: background-color 0.3s ease;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
 .faq-pricing {
   background-color: #ffffff;
@@ -738,10 +743,10 @@ header {
   border-radius: 8px;
   margin-bottom: 0.5rem;
   transition: background-color 0.3s ease;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
 
-.faq-pricing:hover{
+.faq-pricing:hover {
   background-color: #e0f0ff;
 }
 
@@ -758,32 +763,30 @@ header {
   color: #555;
 }
 
-.faq-answer p{
+.faq-answer p {
   background-color: #f4faff;
 }
 
 /* footer */
 
-footer{
+footer {
   font-family: "Montserrat", sans-serif;
   background-color: #f4faff;
   text-align: center;
-  
 }
 
-.meTherappy{
+.meTherappy {
   font-size: 20px;
   color: #005f99;
 }
 
-
 /* pricing */
-.header{
+.header {
   background-color: #005f99;
-      color: white;
-      padding: 2rem;
-      text-align: center;
-      font-family: "Montserrat", sans-serif;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
 }
 
 .pricing-section {
@@ -818,7 +821,6 @@ footer{
   font-size: 2rem;
   font-weight: bold;
   margin: 1rem 0;
-  
 }
 
 .features {
@@ -834,7 +836,7 @@ footer{
 .btn {
   display: inline-block;
   padding: 0.75rem 1.5rem;
-  background-color:#005f99;
+  background-color: #005f99;
   color: white;
   border: none;
   border-radius: 0.5rem;
@@ -856,7 +858,6 @@ footer{
   margin: 0 auto;
   font-family: "Montserrat", sans-serif;
   font-size: 25px;
-  
 }
 
 .how-to-pay h2 {
@@ -882,13 +883,13 @@ footer{
   background-color: white;
   border-radius: 1rem;
   padding: 1.5rem;
-  
+
   text-align: left;
   font-size: 0.95rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
-.method:hover{
+.method:hover {
   transform: translateY(-5px);
   transition: 0.5s ease;
 }
@@ -900,19 +901,18 @@ footer{
   color: #333;
 }
 
-
-.fa-bitcoin{
- font-size: 25px;
-}
-
-.fa-paypal{
+.fa-bitcoin {
   font-size: 25px;
 }
 
-.fa-money-bill-transfer{
+.fa-paypal {
   font-size: 25px;
 }
 
-.fa-credit-card{
+.fa-money-bill-transfer {
+  font-size: 25px;
+}
+
+.fa-credit-card {
   font-size: 25px;
 }

@@ -18,6 +18,12 @@ let currentIndex = 0;
     question.addEventListener("click", () => {
       const answer = question.nextElementSibling;
       answer.style.display = (answer.style.display === "block") ? "none" : "block";
+      answer.style.fontSize = "25px";
+      answer.style.fontFamily = "Montserrat", 'sans-serif';
+      answer.style.maxWidth = "600px";         
+      answer.style.lineHeight = "1.6";
+      answer.style.margin = "20px auto";  
+      answer.style.textAlign = "center";     
     });
   });
 
