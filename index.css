@@ -413,7 +413,10 @@ header {
 
 
 /* Responsive: Show hamburger and hide links */
-@media (max-width: 500px) {
+@media (max-width: 600px) {
+  body{
+    width: 100%;
+  }
   .nav-list {
     display: none;
     flex-direction: column;
@@ -424,6 +427,7 @@ header {
     width: 100%;
     text-align: center;
     font-family: "Ubuntu", sans-serif;
+    border-radius: 10px;
     
     
   }
@@ -432,7 +436,7 @@ header {
     color: whitesmoke;
   }
 
-  .nav-list a.active{
+  .nav-list a:active{
     color:black
   }
 
@@ -451,6 +455,9 @@ header {
     
   }
 
+  .nav-list li a:hover{
+    color:black;
+  }
   
 
   .nav-list.active {
