@@ -466,7 +466,7 @@ header {
 
   .about p {
     font-size: 14px;
-    text-align: left;
+    text-align: justify;
     padding-right: 10px;
   }
 }
