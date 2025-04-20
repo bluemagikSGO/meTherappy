@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>meTherappy - Steven's Dashboard</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="dashboard-container">
+      <!-- Sidebar Navigation -->
+      <aside class="sidebar">
+        <div class="sidebar-header">
+          <img
+            src="images/logo.png"
+            alt="meTherappy Logo"
+            class="dashboard-logo"
+          />
+          <h2>BluemagikSGO</h2>
+        </div>
+        <nav class="sidebar-nav">
+          <ul>
+            <li class="active">
+              <a href="#"><i class="fas fa-home"></i> Dashboard</a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-calendar-alt"></i> Appointments</a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-comments"></i> Messages</a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-user-md"></i> Therapists</a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-file-alt"></i> Resources</a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-cog"></i> Settings</a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-question-circle"></i> Help</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="sidebar-footer">
+          <button class="logout-btn">
+            <i class="fas fa-sign-out-alt"></i> Logout
+          </button>
+        </div>
+      </aside>
+
+      <!-- Main Content Area -->
+      <main class="main-content">
+        <!-- Top Navigation Bar -->
+        <header class="top-nav">
+          <div class="search-bar">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Search..." />
+          </div>
+          <div class="user-profile">
+            <div class="notifications">
+              <i class="fas fa-bell"></i>
+              <span class="notification-badge">3</span>
+            </div>
+            <img src="images/steve.png" alt="User Avatar" class="user-avatar" />
+            <span class="user-name">Steven Gabriel</span>
+          </div>
+        </header>
+
+        <!-- Dashboard Content -->
+        <div class="dashboard-content">
+          <!-- Welcome Banner -->
+          <section class="welcome-banner">
+            <div class="welcome-text">
+              <h1>Welcome back, Steven!</h1>
+              <p>How are you feeling today?</p>
+            </div>
+            <div class="mood-selector">
+              <button class="mood-btn happy">
+                <i class="fas fa-smile"></i> Happy
+              </button>
+              <button class="mood-btn neutral">
+                <i class="fas fa-meh"></i> Neutral
+              </button>
+              <button class="mood-btn sad">
+                <i class="fas fa-frown"></i> Sad
+              </button>
+            </div>
+          </section>
+
+          <!-- Stats Cards -->
+          <section class="stats-cards">
+            <div class="stat-card">
+              <div class="stat-icon blue">
+                <i class="fas fa-calendar-check"></i>
+              </div>
+              <div class="stat-info">
+                <h3>Upcoming Session</h3>
+                <p>Tomorrow, 2:00 PM</p>
+                <span>With Dr. Sarah Kim</span>
+              </div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-icon green">
+                <i class="fas fa-comment-dots"></i>
+              </div>
+              <div class="stat-info">
+                <h3>Unread Messages</h3>
+                <p>5</p>
+                <span>From 3 therapists</span>
+              </div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-icon purple">
+                <i class="fas fa-book"></i>
+              </div>
+              <div class="stat-info">
+                <h3>Resources</h3>
+                <p>12</p>
+                <span>New articles available</span>
+              </div>
+            </div>
+          </section>
+
+          <!-- Upcoming Appointments -->
+          <section class="appointments-section">
+            <div class="section-header">
+              <h2>Upcoming Appointments</h2>
+              <a href="#" class="view-all">View All</a>
+            </div>
+            <div class="appointments-list">
+              <div class="appointment-card">
+                <div class="appointment-info">
+                  <div class="therapist-avatar">
+                    <img src="images/therapist1.jpg" alt="Dr. Sarah Kim" />
+                  </div>
+                  <div class="appointment-details">
+                    <h3>Dr. Sarah Kim</h3>
+                    <p>Clinical Psychologist</p>
+                    <div class="appointment-time">
+                      <i class="fas fa-clock"></i>
+                      <span>Tomorrow, 2:00 PM - 3:00 PM</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="appointment-actions">
+                  <button class="btn primary">
+                    <i class="fas fa-video"></i> Join
+                  </button>
+                  <button class="btn secondary">
+                    <i class="fas fa-calendar-alt"></i> Reschedule
+                  </button>
+                </div>
+              </div>
+              <div class="appointment-card">
+                <div class="appointment-info">
+                  <div class="therapist-avatar">
+                    <img src="images/therapist2.jpg" alt="Michael Rhodes" />
+                  </div>
+                  <div class="appointment-details">
+                    <h3>Michael Rhodes</h3>
+                    <p>Relationship Therapist</p>
+                    <div class="appointment-time">
+                      <i class="fas fa-clock"></i>
+                      <span>Friday, 10:00 AM - 11:00 AM</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="appointment-actions">
+                  <button class="btn primary" disabled>
+                    <i class="fas fa-video"></i> Join
+                  </button>
+                  <button class="btn secondary">
+                    <i class="fas fa-calendar-alt"></i> Reschedule
+                  </button>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Recent Messages -->
+          <section class="messages-section">
+            <div class="section-header">
+              <h2>Recent Messages</h2>
+              <a href="#" class="view-all">View All</a>
+            </div>
+            <div class="messages-list">
+              <div class="message-card">
+                <div class="message-sender">
+                  <img src="images/therapist1.jpg" alt="Dr. Sarah Kim" />
+                  <div class="sender-info">
+                    <h3>Dr. Sarah Kim</h3>
+                    <p>Clinical Psychologist</p>
+                  </div>
+                </div>
+                <div class="message-preview">
+                  <p>
+                    Hi Steve, I wanted to follow up on our last session. How
+                    have you been feeling since...
+                  </p>
+                  <span class="message-time">2 hours ago</span>
+                </div>
+              </div>
+              <div class="message-card">
+                <div class="message-sender">
+                  <img src="images/therapist3.jpg" alt="Dr. Aisha Bello" />
+                  <div class="sender-info">
+                    <h3>Dr. Aisha Bello</h3>
+                    <p>Trauma Specialist</p>
+                  </div>
+                </div>
+                <div class="message-preview">
+                  <p>
+                    I've reviewed the exercises you sent me. You're making great
+                    progress! Let's discuss...
+                  </p>
+                  <span class="message-time">1 day ago</span>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Wellness Progress -->
+          <section class="progress-section">
+            <div class="section-header">
+              <h2>Your Wellness Progress</h2>
+              <a href="#" class="view-all">View Details</a>
+            </div>
+            <div class="progress-chart">
+              <canvas id="wellnessChart"></canvas>
+            </div>
+            <div class="progress-stats">
+              <div class="progress-stat">
+                <h3>Session Completion</h3>
+                <div class="progress-bar">
+                  <div class="progress-fill" style="width: 75%"></div>
+                </div>
+                <span>75% completed</span>
+              </div>
+              <div class="progress-stat">
+                <h3>Mood Improvement for June</h3>
+                <div class="progress-bar">
+                  <div class="progress-fill" style="width: 60%"></div>
+                </div>
+                <span>60% improvement</span>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="login.js"></script>
+  </body>
+</html>

@@ -94,16 +94,29 @@ $(document).ready(function () {
     const password = passwordInput.val();
 
     // Simulate a login process (replace with your actual authentication logic)
-    if (username === "user" && password === "password") {
+    if (username === "steven" && password === "password") {
       // Successful login: Redirect or perform actions as needed
-      alert("Login successful!");
+      window.location.href = "dashboard.html";
       hideLoginModal();
-      // window.location.href = '/dashboard'; // Example: Redirect to dashboard
     } else {
       // Failed login: Show error message
       errorMessage.show();
     }
   });
+});
+
+// dashboard login mobile
+
+$(document).on("click", "#login-button-mobile", function () {
+  const username = $("#username-mobile").val();
+  const password = $("#password-mobile").val();
+
+  if (username === "steven" && password === "password") {
+    window.location.href = "dashboard.html";
+    $("#login-modal-mobile").css("display", "none");
+  } else {
+    $("#login-error-message-mobile").show();
+  }
 });
 
 // signup modal
@@ -256,3 +269,5 @@ document.addEventListener("click", function (event) {
     navList.classList.remove("active");
   }
 });
+
+// dashboard
