@@ -537,7 +537,7 @@ button:active {
     justify-content: flex-start; /* Align to left */
     padding-left: 0; /* Remove extra padding */
     gap: 15px; /* Reduce gap for mobile */
-    margin-top: 10px; /* Add some spacing */
+    margin-top: 7px; /* Add some spacing */
   }
 
   #tc {
