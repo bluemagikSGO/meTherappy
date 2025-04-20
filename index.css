@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
 }
 
 body {
@@ -61,19 +60,30 @@ header {
   width: auto;
 }
 
-/* login modal */
-#login-link {
-  color: #005f99; /* Blue link color */
+button {
+  font: inherit;
+  background-color: #f0f0f0;
+  border: 0;
+  color: #242424;
+  border-radius: 0.5em;
+  font-size: 1.35rem;
+  padding: 0.19em 0.4em;
+  font-weight: 600;
+  text-shadow: 0 0.0625em 0 #fff;
+  box-shadow: inset 0 0.0625em 0 0 #f4f4f4, 0 0.0625em 0 0 #efefef,
+    0 0.125em 0 0 #ececec, 0 0.25em 0 0 #e0e0e0, 0 0.3125em 0 0 #dedede,
+    0 0.375em 0 0 #dcdcdc, 0 0.425em 0 0 #cacaca, 0 0.425em 0.5em 0 #cecece;
+  transition: 0.15s ease;
   cursor: pointer;
-  text-decoration: none;
-  font-weight: bolder;
+}
+button:active {
+  translate: 0 0.225em;
+  box-shadow: inset 0 0.03em 0 0 #f4f4f4, 0 0.03em 0 0 #efefef,
+    0 0.0625em 0 0 #ececec, 0 0.125em 0 0 #e0e0e0, 0 0.125em 0 0 #dedede,
+    0 0.2em 0 0 #dcdcdc, 0 0.225em 0 0 #cacaca, 0 0.225em 0.375em 0 #cecece;
 }
 
-#login-link:hover {
-  text-decoration: underline; /* Underline on hover */
-  color: black;
-}
-
+/* login modal */
 .modal {
   display: none; /* Initially hidden */
   position: fixed; /* Overlay the entire window */
@@ -215,17 +225,6 @@ header {
 }
 
 /* sign up modal */
-#signup-link {
-  color: #005f99; /* Blue link color */
-  cursor: pointer;
-  text-decoration: none;
-  font-weight: bolder;
-}
-
-#signup-link:hover {
-  text-decoration: underline; /* Underline on hover */
-  color: black;
-}
 
 #signup-modal {
   display: none; /* Initially hidden */
@@ -404,6 +403,14 @@ header {
   cursor: pointer;
 }
 
+.logsign-mobile {
+  display: none;
+}
+
+#login-link {
+  color: #5993f1;
+}
+
 /* Responsive: Show hamburger and hide links */
 @media (max-width: 768px) {
   body {
@@ -420,6 +427,7 @@ header {
     text-align: center;
     font-family: "Ubuntu", sans-serif;
     border-radius: 10px;
+    padding-bottom: 20px;
   }
 
   .nav-list a {
@@ -469,6 +477,58 @@ header {
     text-align: justify;
     padding-right: 10px;
   }
+
+  .logsign {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+    align-items: center;
+  }
+
+  .log-m {
+    display: none;
+  }
+  .signup-m {
+    display: none;
+  }
+
+  /* Adjust modal positioning for mobile */
+  .modal {
+    justify-content: center;
+    padding-right: 0;
+    padding-bottom: 0;
+  }
+
+  #signup-modal {
+    justify-content: center;
+    padding-right: 0;
+    padding-top: 0;
+  }
+
+  .modal-content {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .logsign-mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    text-align: center;
+    padding: 0px 150px;
+  }
+
+  .logsign-mobile button {
+    width: 100%;
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  footer {
+    padding: 0px 15px;
+  }
 }
 
 /* slider images */
@@ -493,7 +553,7 @@ header {
   width: 100%;
   height: 99%;
   object-fit: cover;
-  
+  padding-bottom: 25px;
 }
 
 .fade1 {
