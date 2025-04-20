@@ -532,6 +532,23 @@ button:active {
     padding: 0px 15px;
     padding-bottom: 15px;
   }
+
+  .t-checkm {
+    justify-content: flex-start; /* Align to left */
+    padding-left: 0; /* Remove extra padding */
+    gap: 15px; /* Reduce gap for mobile */
+    margin-top: 10px; /* Add some spacing */
+  }
+
+  #tc {
+    margin-right: 0; /* Remove right margin */
+    margin-top: 0; /* Adjust top margin */
+  }
+
+  .signup-therapist {
+    text-align: left; /* Align text to left */
+    margin-bottom: 10px; /* Add spacing */
+  }
 }
 
 /* slider images */
