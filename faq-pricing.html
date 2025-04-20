@@ -17,28 +17,29 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
       rel="stylesheet"
     />
-
-    
   </head>
   <body>
-    
-     <div class="sticky-cont">
+    <div class="sticky-cont">
       <header>
         <nav>
           <div class="nav-cont">
             <div class="logo"><img src="images/logo.png" alt="logo" /></div>
             <div>
               <ul class="nav-list">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Home</a></li>
                 <li><a href="#">Blog</a></li>
                 <li><a href="faq-pricing.html" target="_blank">Pricing</a></li>
                 <li><a href="#">Foundation</a></li>
                 <li><a href="#">Donation</a></li>
+                <li class="logsign-mobile">
+                <button id="login-link-mobile">Login</button>
+                <button id="signup-link-mobile">Sign-up</button>
+                </li>
               </ul>
             </div>
             <div class="logsign">
               <div>
-                <a href="#" id="login-link">Login</a>
+                <button id="login-link" class="log-m">Login</button>
               
   
                 <!-- Login Modal -->
@@ -58,14 +59,14 @@
                           <div id="login-error-message" class="error-message">Invalid username or password.</div>
                       </div>
                       <div class="modal-footer">
-                          <button id="cancel-button" class="cancel-button">Cancel</button>
+                  
                           <button id="login-button" class="login-button">Login</button>
                       </div>
                   </div>
               </div>
-                /
+                
                 <!-- signup modal -->
-                <a href="#" id="signup-link">Sign-Up</a>
+                <button id="signup-link" class="signup-m">Sign-up</button>
                 <!-- start -->
                 <div id="signup-modal" class="modal">
                   <div class="modal-content">
@@ -100,7 +101,7 @@
                           <div id="signup-error-message" class="error-message"></div>
                       </div>
                       <div class="modal-footer">
-                          <button id="cancel-signup-button" class="cancel-button">Cancel</button>
+                          
                           <button id="signup-button" class="signup-button">Sign Up</button>
                       </div>
                   </div>
@@ -121,13 +122,11 @@
           </div>
         </nav>
       </header>
-      
-
       <div class="header">
         <h1>meTherappy Pricing</h1>
         <p>Affordable mental wellness plans for everyone 🌱</p>
       </div>
-    
+
       <section class="pricing-section">
         <!-- Free Plan -->
         <div class="plan">
@@ -141,7 +140,7 @@
           </ul>
           <a href="#" class="btn">Get Started</a>
         </div>
-    
+
         <!-- Basic Plan -->
         <div class="plan">
           <h2>Basic</h2>
@@ -154,7 +153,7 @@
           </ul>
           <a href="#" class="btn">Choose Plan</a>
         </div>
-    
+
         <!-- Premium Plan -->
         <div class="plan">
           <h2>Premium</h2>
@@ -177,52 +176,64 @@
           <a href="#" class="btn">Pay for Session</a>
         </div>
       </section>
-     </div>
-    
-      <!-- how to pay section -->
-       
-     <section class="how-to-pay">
+    </div>
+
+    <!-- how to pay section -->
+
+    <section class="how-to-pay">
       <h2>How to Pay</h2>
-      <p>You can choose from a variety of convenient and secure payment options to complete your subscription or session booking.</p>
-    
+      <p>
+        You can choose from a variety of convenient and secure payment options
+        to complete your subscription or session booking.
+      </p>
+
       <div class="payment-methods">
         <div class="method">
-          <i class="fa-solid fa-credit-card"></i> <strong>Credit/Debit Cards</strong>
+          <i class="fa-solid fa-credit-card"></i>
+          <strong>Credit/Debit Cards</strong>
           <p>We accept Visa, MasterCard, and Verve for all payments.</p>
         </div>
-    
+
         <div class="method">
-          <i class="fa-solid fa-money-bill-transfer"></i> <strong>Bank Transfer</strong>
-          <p>Pay directly from your bank via secure transfer. Bank details are provided during checkout.</p>
+          <i class="fa-solid fa-money-bill-transfer"></i>
+          <strong>Bank Transfer</strong>
+          <p>
+            Pay directly from your bank via secure transfer. Bank details are
+            provided during checkout.
+          </p>
         </div>
-    
+
         <div class="method">
           <i class="fa-brands fa-paypal"></i> <strong>PayPal</strong>
           <p>Use your PayPal account to make fast and protected payments.</p>
         </div>
-    
+
         <div class="method">
           <i class="fa-brands fa-bitcoin"></i> <strong>Cryptocurrency</strong>
-          <p>We accept Bitcoin (BTC), Ethereum (ETH), and USDT. Wallet address available at checkout.</p>
+          <p>
+            We accept Bitcoin (BTC), Ethereum (ETH), and USDT. Wallet address
+            available at checkout.
+          </p>
         </div>
       </div>
     </section>
     <footer>
-     <p>
-     <span class="meTherappy"><b>meTherappy</b></span> 
-      Your space to heal, grow, and thrive.
-      🌿 Empowering mental wellness, one step at a time.
+      <p>
+        <span class="meTherappy"><b>meTherappy</b></span>
+        Your space to heal, grow, and thrive. 🌿 Empowering mental wellness, one
+        step at a time. Connect with us: 📧 support@metherappy.com | 🌐
+        www.metherappy.com Follow us: instagram
+        <i class="fa-brands fa-instagram"></i> X twitter
+        <i class="fa-brands fa-x-twitter"></i> Facebook
+        <i class="fa-brands fa-facebook"></i> LinkedIn
+        <i class="fa-brands fa-linkedin"></i>
 
-      Connect with us:
-      📧 support@metherappy.com | 🌐 www.metherappy.com
-      Follow us: instagram <i class="fa-brands fa-instagram"></i> X twitter <i class="fa-brands fa-x-twitter"></i> Facebook <i class="fa-brands fa-facebook"></i> LinkedIn <i class="fa-brands fa-linkedin"></i>
-
-      © 2025 meTherappy. All rights reserved.
-      <strong>This platform is not a substitute for professional medical advice, diagnosis, or treatment</strong>
-     </p>
-
-
-    
+        © 2025 meTherappy. All rights reserved.
+        <strong
+          >This platform is not a substitute for professional medical advice,
+          diagnosis, or treatment</strong
+        >
+      </p>
     </footer>
     <script
       src="https://code.jquery.com/jquery-3.7.1.js"
@@ -230,6 +241,9 @@
       crossorigin="anonymous"
     ></script>
     <script src="index.js"></script>
-    <script src="https://kit.fontawesome.com/e514abaf34.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/e514abaf34.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
