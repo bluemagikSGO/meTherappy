@@ -427,7 +427,8 @@ button:active {
     text-align: center;
     font-family: "Ubuntu", sans-serif;
     border-radius: 10px;
-    padding-bottom: 20px;
+    padding-bottom: 25px;
+    padding-top: 25px;
   }
 
   .nav-list a {
