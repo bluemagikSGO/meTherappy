@@ -1635,6 +1635,12 @@ body {
   display: none;
 }
 
+.not-header {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
 /* Responsive Styles */
 @media (max-width: 992px) {
   .sidebar {
@@ -1791,6 +1797,12 @@ body {
     order: 1; /* User profile comes first */
     width: 100%;
     justify-content: space-between;
+  }
+
+  .not-header {
+    display: flex;
+    gap: 10px;
+    align-items: center;
   }
 
   .sidebar-nav a i {
