@@ -1217,7 +1217,7 @@ body {
 }
 
 .mood-btn {
-  padding: 8px 15px;
+  padding: 8px 8px;
   border: none;
   border-radius: 20px;
   cursor: pointer;
@@ -1522,7 +1522,6 @@ body {
   padding: 20px;
   margin-bottom: 20px;
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
-  height: 400px;
 }
 
 .progress-stats {
@@ -1642,8 +1641,12 @@ body {
 
 .not-header {
   display: flex;
-  gap: 10px;
+  gap: 12px;
   align-items: center;
+}
+
+.bal-add {
+  display: flex;
 }
 
 /* Responsive Styles */
