@@ -913,7 +913,7 @@ footer {
   margin-bottom: 0.75rem;
 }
 
-.btn {
+.plan_btn {
   display: inline-block;
   padding: 0.75rem 1.5rem;
   background-color: #005f99;
@@ -1559,6 +1559,83 @@ body {
   color: #666;
 }
 
+.mobile-menu-button {
+  display: none;
+}
+
+/* available balance */
+
+.walletBalanceCard {
+  width: fit-content;
+  height: 55px;
+  background-color: #005f99;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12px;
+  padding: 0px 12px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.svgwrapper {
+  width: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.svgwrapper svg {
+  width: 100%;
+}
+.balancewrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 120px;
+  gap: 0px;
+}
+.balanceHeading {
+  font-size: 8px;
+  color: rgb(214, 214, 214);
+  font-weight: 100;
+  letter-spacing: 0.6px;
+}
+.balance {
+  font-size: 13.5px;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.addmoney {
+  padding: 1px 15px;
+  border-radius: 20px;
+  background-color: #c083eb;
+  color: white;
+  border: none;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.addmoney:hover {
+  background-color: #d7aef4;
+  color: #9c59cc;
+}
+.plussign {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hamburger-2 {
+  display: none;
+}
+
 /* Responsive Styles */
 @media (max-width: 992px) {
   .sidebar {
@@ -1597,6 +1674,7 @@ body {
   }
 
   .sidebar {
+    display: none;
     width: 100%;
     flex-direction: row;
     padding: 10px;
@@ -1672,6 +1750,19 @@ body {
     width: 48%;
     justify-content: center;
   }
+
+  .walletBalanceCard {
+    width: 35%;
+  }
+
+  .mobile-menu-button {
+    display: block;
+    font-size: 35px;
+  }
+
+  .hamburger-2 {
+    display: none;
+  }
 }
 
 @media (max-width: 480px) {
@@ -1683,6 +1774,15 @@ body {
   .search-bar {
     width: 100%;
     margin-bottom: 15px;
+  }
+
+  .mobile-menu-button {
+    display: none;
+  }
+
+  .hamburger-2 {
+    display: block;
+    font-size: 35px;
   }
 
   .user-profile {
@@ -1697,4 +1797,11 @@ body {
   .logout-btn i {
     font-size: 1.1rem;
   }
+
+  .walletBalanceCard {
+    width: 100%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1000px) {
 }

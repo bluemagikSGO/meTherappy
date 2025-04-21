@@ -270,4 +270,4 @@ document.addEventListener("click", function (event) {
   }
 });
 
-// dashboard
+// loader
