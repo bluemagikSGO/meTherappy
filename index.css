@@ -1506,7 +1506,7 @@ body {
 .message-time {
   position: absolute;
   right: 0;
-  top: 0;
+  top: 1;
   font-size: 0.8rem;
   color: #999;
 }
