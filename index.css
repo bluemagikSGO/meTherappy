@@ -1410,6 +1410,10 @@ body {
   align-items: center;
 }
 
+.mood-btn {
+  padding: 8px 8px;
+}
+
 .btn i {
   margin-right: 5px;
 }
