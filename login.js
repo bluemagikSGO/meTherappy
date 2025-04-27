@@ -133,19 +133,36 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // hamburger
+// hamburger
 const hamburger = document.querySelector(".hamburger-2");
 const sidebar = document.querySelector(".sidebar");
+const overlay = document.createElement("div");
+overlay.className = "sidebar-overlay";
+document.body.appendChild(overlay);
 
 if (hamburger) {
   hamburger.addEventListener("click", (e) => {
-    e.stopPropagation(); // Prevent this click from triggering the document click handler
+    e.stopPropagation();
     sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
   });
 }
 
-// Close sidebar when clicking outside
+// Close sidebar when clicking outside or on overlay
 document.addEventListener("click", function (event) {
-  if (!sidebar.contains(event.target) && !hamburger.contains(event.target)) {
+  if (
+    sidebar &&
+    hamburger &&
+    !sidebar.contains(event.target) &&
+    !hamburger.contains(event.target)
+  ) {
     sidebar.classList.remove("active");
+    overlay.classList.remove("active");
   }
+});
+
+// Also close when clicking overlay
+overlay.addEventListener("click", () => {
+  sidebar.classList.remove("active");
+  overlay.classList.remove("active");
 });
