@@ -116,3 +116,36 @@ $(document).ready(function () {
     }
   });
 });
+
+// switch toggle for aside
+document.addEventListener("DOMContentLoaded", function () {
+  const toggle = document.getElementById("cbx-51");
+  const sidebar = document.querySelector(".sidebar");
+  const mainContent = document.querySelector(".main-content");
+
+  toggle.addEventListener("change", function () {
+    if (this.checked) {
+      sidebar.classList.add("collapsed");
+    } else {
+      sidebar.classList.remove("collapsed");
+    }
+  });
+});
+
+// hamburger
+const hamburger = document.querySelector(".hamburger-2");
+const sidebar = document.querySelector(".sidebar");
+
+if (hamburger) {
+  hamburger.addEventListener("click", (e) => {
+    e.stopPropagation(); // Prevent this click from triggering the document click handler
+    sidebar.classList.toggle("active");
+  });
+}
+
+// Close sidebar when clicking outside
+document.addEventListener("click", function (event) {
+  if (!sidebar.contains(event.target) && !hamburger.contains(event.target)) {
+    sidebar.classList.remove("active");
+  }
+});
