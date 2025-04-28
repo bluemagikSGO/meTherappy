@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Donation</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+      <header>
+        <nav>
+          <div class="nav-cont">
+            <div class="logo"><img src="images/logo.png" alt="logo" /></div>
+            <div>
+              <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="faq-pricing.html" target="_blank">Pricing</a></li>
+                <li><a href="#">Foundation</a></li>
+                <li><a href="#">Donation</a></li>
+                <li class="logsign-mobile">
+                <button id="login-link-mobile">Login</button>
+                <button id="signup-link-mobile">Sign-up</button>
+                </li>
+              </ul>
+            </div>
+            <div class="logsign">
+              <div>
+                <button id="login-link" class="log-m">Login</button>
+              
+  
+                <!-- Login Modal -->
+  
+                <div id="login-modal" class="modal">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <h2><span class="meTherappy">meTherappy</span> Login</h2>
+                          <button id="close-modal" class="close-button">&times;</button>
+                      </div>
+                      <div class="modal-body">
+                          <label for="username">Username</label>
+                          <input type="text" id="username" name="username" placeholder="Enter your username">
+                          <label for="password">Password</label>
+                          <input type="password" id="password" name="password" placeholder="Enter your password">
+                          <div><a href="">forget password?</a></div>
+                          <div id="login-error-message" class="error-message">Invalid username or password.</div>
+                      </div>
+                      <div class="modal-footer">
+                  
+                          <button id="login-button" class="login-button">Login</button>
+                      </div>
+                  </div>
+              </div>
+                
+                <!-- signup modal -->
+                <button id="signup-link" class="signup-m">Sign-up</button>
+                <!-- start -->
+                <div id="signup-modal" class="modal">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <h2><span class="meTherappy">meTherappy</span> Sign Up</h2>
+                          <button id="close-signup-modal" class="close-button">&times;</button>
+                      </div>
+                      <div class="modal-body">
+                          <label for="signup-fullname">Fullname</label>
+                          <input type="text" id="signup-fullname" name="fullname" placeholder="Enter your fullname">
+                          <label for="signup-username">Username</label>
+                          <input type="text" id="signup-username" name="username" placeholder="Enter your username">
+                          <label for="signup-password">Password</label>
+                          <input type="password" id="signup-password" name="password" placeholder="Enter your password">
+                          <label for="signup-password">Confirm Password</label>
+                          <input type="password" id="signup-password" name="password" placeholder="Confirm your password">
+                          <label for="signup-email">Email</label>
+                          <input type="email" id="signup-email" name="email" placeholder="Enter your email">
+                          <div id="t-c">
+                            <div class="signup-therapist"><a href="">Register as a Therapist</a></div>
+  
+                            <div class="t-checkm">
+                            <a href="#" class="tc-alert">Terms and Conditions</a>
+                      
+                            <input type="checkbox" name="terms" id="tc">
+                            </div>
+                          </div>
+  
+                          
+                          
+  
+                          <div id="signup-error-message" class="error-message"></div>
+                      </div>
+                      <div class="modal-footer">
+                          
+                          <button id="signup-button" class="signup-button">Sign Up</button>
+                      </div>
+                  </div>
+              </div>   
+            </div>
+            
+            <!-- end -->
+          </div>
+
+            
+            
+            
+            
+            
+          <!-- hamburger -->
+          <div class="hamburger" id="hamburger">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </nav>
+      </header>
+      <div class="don-cont">
+        <div>
+          <div class="don-left">
+            <span class="help">HELP US</span> <br> SPREAD THE IMPORTANCE OF <span class="mental">MENTAL HEALTH</span> ACROSS AFRICA AND THE WORLD
+          </div>
+          <small class="mental-small">Most people have no idea they are going through mental health issues and problems, especially in Africa. Your donation will allow us travel far and wide across Africa and the world to spread the importance of mental health and the solutions to solving the many problems under it.</small>
+          <div class="btn-don-cont">
+            <button class="don-btn">Donate</button>
+            <button class="btn-play"> Watch video</button>
+          </div>
+            
+
+          
+          
+        </div>
+        <div class="don-right">
+          <img class="donate-image" src="images/donation.png" alt="">
+        </div>
+      </div>
+
+      <!-- donation -->
+       <div class="donation-card">
+          <h1 class="donation-title">Support Mental Wellness</h1>
+
+          <div class="amount-options">
+            <button class="amount-btn">$10</button>
+            <button class="amount-btn">$20</button>
+            <button class="amount-btn">$50</button>
+            <button class="amount-btn">$100</button>
+          </div>
+
+          <div class="custom-amount">
+            <input type="text" placeholder="Enter custom amount" />
+          </div>
+
+          <div class="donor-info">
+            <input type="text" placeholder="Your Name" />
+            <input type="email" placeholder="Your Email" />
+          </div>
+
+          <button class="donate-btn">Donate Now</button>
+          <p class="donate_crypto"><a class="donate_crypto" href="#">Donate with Cryptocurrency</a></p>
+        </div>
+
+         <footer class="donate_footer">
+      <p>
+        <span class="meTherappy"><b>meTherappy</b></span>
+        Your space to heal, grow, and thrive. 🌿 Empowering mental wellness, one
+        step at a time. Connect with us: 📧 support@metherappy.com | 🌐
+        www.metherappy.com Follow us: instagram
+        <i class="fa-brands fa-instagram"></i> X twitter
+        <i class="fa-brands fa-x-twitter"></i> Facebook
+        <i class="fa-brands fa-facebook"></i> LinkedIn
+        <i class="fa-brands fa-linkedin"></i>
+
+        © 2025 meTherappy. All rights reserved.
+        <strong
+          >This platform is not a substitute for professional medical advice,
+          diagnosis, or treatment</strong
+        >
+      </p>
+    </footer>
+
+
+
+
+      <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+    <script
+      src="https://kit.fontawesome.com/e514abaf34.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -270,4 +270,55 @@ document.addEventListener("click", function (event) {
   }
 });
 
-// loader
+// Donation
+// Donation
+const donate_btn = document.querySelector(".don-btn");
+const donate_image = document.querySelector(".donate-image");
+const donation_card = document.querySelector(".donation-card");
+const don_left = document.querySelector(".don-left");
+
+// Create overlay element
+const donationOverlay = document.createElement("div");
+donationOverlay.className = "donation-overlay";
+document.body.appendChild(donationOverlay);
+
+donate_btn.addEventListener("click", function () {
+  if (window.innerWidth <= 500) {
+    // Mobile view
+    donation_card.style.display = "block";
+    donationOverlay.style.display = "block";
+
+    // Position card in center of viewport
+    donation_card.style.position = "fixed";
+    donation_card.style.top = "50%";
+    donation_card.style.left = "50%";
+    donation_card.style.transform = "translate(-50%, -50%)";
+    donation_card.style.zIndex = "1000";
+  } else {
+    // Desktop behavior
+    donate_image.replaceWith(donation_card);
+    donation_card.style.display = "block";
+  }
+});
+
+// Close when clicking overlay
+donationOverlay.addEventListener("click", function () {
+  donation_card.style.display = "none";
+  donationOverlay.style.display = "none";
+  if (window.innerWidth <= 500) {
+    donate_btn.style.display = ""; // Reset to default
+  }
+});
+
+// Close when clicking outside card (for desktop)
+document.addEventListener("click", function (event) {
+  if (donation_card.style.display === "block" && window.innerWidth > 500) {
+    if (
+      !donation_card.contains(event.target) &&
+      event.target !== donate_btn &&
+      !donate_btn.contains(event.target)
+    ) {
+      donation_card.style.display = "none";
+    }
+  }
+});
