@@ -7,7 +7,7 @@ function showNextTestimonial() {
   testimonials[currentIndex].classList.add("active");
 }
 
-setInterval(showNextTestimonial, 3000); // Change every 4 seconds
+setInterval(showNextTestimonial, 3000); // Change every 3 seconds
 
 // FAQ
 
