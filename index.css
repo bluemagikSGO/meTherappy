@@ -412,7 +412,7 @@ button:active {
 }
 
 /* Responsive: Show hamburger and hide links */
-@media (max-width: 768px) {
+@media (max-width: 500px) {
   body {
     width: 100%;
   }
