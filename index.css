@@ -2255,4 +2255,7 @@ body {
     width: 200px;
     padding: 15px;
   }
+  .donate_footer {
+    position: absolute;
+  }
 }
