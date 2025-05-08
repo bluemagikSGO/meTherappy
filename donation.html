@@ -27,7 +27,7 @@
               <ul class="nav-list">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#">Blog</a></li>
-                <li><a href="faq-pricing.html" target="_blank">Pricing</a></li>
+                <li><a href="pricing.html" target="_blank">Pricing</a></li>
                 <li><a href="#">Foundation</a></li>
                 <li><a href="#">Donation</a></li>
                 <li class="logsign-mobile">
@@ -131,6 +131,8 @@
             <button class="don-btn">Donate</button>
             <button class="btn-play"> Watch video</button>
           </div>
+
+          
             
 
           
@@ -140,30 +142,36 @@
           <img class="donate-image" src="images/donation.png" alt="">
         </div>
       </div>
+      <div class="don-right don-imgg">
+          <img class="donate-image" src="images/donation.png" alt="">
+        </div>
 
       <!-- donation -->
-       <div class="donation-card">
-          <h1 class="donation-title">Support Mental Wellness</h1>
+       <div class="modal" id="donationModal">
+        <div class="donation-card">
+            <button class="close-btn" onclick="closeModal()">&times;</button>
+            <h1 class="donation-title">Support Mental Wellness</h1>
 
-          <div class="amount-options">
-            <button class="amount-btn">$10</button>
-            <button class="amount-btn">$20</button>
-            <button class="amount-btn">$50</button>
-            <button class="amount-btn">$100</button>
-          </div>
+            <div class="amount-options">
+                <button class="amount-btn">$10</button>
+                <button class="amount-btn">$20</button>
+                <button class="amount-btn">$50</button>
+                <button class="amount-btn">$100</button>
+            </div>
 
-          <div class="custom-amount">
-            <input type="text" placeholder="Enter custom amount" />
-          </div>
+            <div class="custom-amount">
+                <input type="text" placeholder="Enter custom amount" />
+            </div>
 
-          <div class="donor-info">
-            <input type="text" placeholder="Your Name" />
-            <input type="email" placeholder="Your Email" />
-          </div>
+            <div class="donor-info">
+                <input type="text" placeholder="Your Name" />
+                <input type="email" placeholder="Your Email" />
+            </div>
 
-          <button class="donate-btn">Donate Now</button>
-          <p class="donate_crypto"><a class="donate_crypto" href="#">Donate with Cryptocurrency</a></p>
+            <button class="donate-btn">Donate Now</button>
+            <p class="donate_crypto"><a class="donate_crypto" href="#"> <i class="fa-brands fa-bitcoin"></i> <span>Donate with Cryptocurrency</span></a></p>
         </div>
+    </div>
 
          <footer class="donate_footer">
       <p>
