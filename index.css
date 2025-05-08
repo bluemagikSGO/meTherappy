@@ -420,7 +420,7 @@ button:active {
   .nav-list {
     display: none;
     flex-direction: column;
-    background-color: #5993f1;
+    background-color: #5993f1f9;
     position: absolute;
     top: 70px;
     right: 0;
