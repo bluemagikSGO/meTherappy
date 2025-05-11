@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foundation</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav-cont">
+          <div class="logo"><img src="images/logo.png" alt="logo" /></div>
+          <div>
+            <ul class="nav-list">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="pricing.html" >Pricing</a></li>
+              <li><a href="#">Foundation</a></li>
+              <li><a href="donation.html">Donation</a></li>
+              <li class="logsign-mobile">
+              <button id="login-link-mobile">Login</button>
+              <button id="signup-link-mobile">Sign-up</button>
+              </li>
+            </ul>
+          </div>
+          <div class="logsign">
+            <div>
+              <button id="login-link" class="log-m">Login</button>
+            
+
+              <!-- Login Modal -->
+
+              <div id="login-modal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2><span class="meTherappy">meTherappy</span> Login</h2>
+                        <button id="close-modal" class="close-button">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" name="username" placeholder="Enter your username">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" placeholder="Enter your password">
+                        <div><a href="">forget password?</a></div>
+                        <div id="login-error-message" class="error-message">Invalid username or password.</div>
+                    </div>
+                    <div class="modal-footer">
+                
+                        <button id="login-button" class="login-button">Login</button>
+                    </div>
+                </div>
+            </div>
+              
+              <!-- signup modal -->
+              <button id="signup-link" class="signup-m">Sign-up</button>
+              <!-- start -->
+              <div id="signup-modal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2><span class="meTherappy">meTherappy</span> Sign Up</h2>
+                        <button id="close-signup-modal" class="close-button">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <label for="signup-fullname">Fullname</label>
+                        <input type="text" id="signup-fullname" name="fullname" placeholder="Enter your fullname">
+                        <label for="signup-username">Username</label>
+                        <input type="text" id="signup-username" name="username" placeholder="Enter your username">
+                        <label for="signup-password">Password</label>
+                        <input type="password" id="signup-password" name="password" placeholder="Enter your password">
+                        <label for="signup-password">Confirm Password</label>
+                        <input type="password" id="signup-password" name="password" placeholder="Confirm your password">
+                        <label for="signup-email">Email</label>
+                        <input type="email" id="signup-email" name="email" placeholder="Enter your email">
+                        <div id="t-c">
+                          <div class="signup-therapist"><a href="">Register as a Therapist</a></div>
+
+                          <div class="t-checkm">
+                          <a href="#" class="tc-alert">Terms and Conditions</a>
+                    
+                          <input type="checkbox" name="terms" id="tc">
+                          </div>
+                        </div>
+
+                        
+                        
+
+                        <div id="signup-error-message" class="error-message"></div>
+                    </div>
+                    <div class="modal-footer">
+                        
+                        <button id="signup-button" class="signup-button">Sign Up</button>
+                    </div>
+                </div>
+            </div>   
+          </div>
+          
+          <!-- end -->
+        </div>
+
+          
+          
+          
+          
+          
+        <!-- hamburger -->
+        <div class="hamburger" id="hamburger">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="landing-page">
+        <div class="overlay"></div>
+        <div class="foundation-about">
+          <p class="p1">
+            THE <span class="metherapy">METHERAPPY</span> FOUNDATION (T.M.F)
+          </p>
+          <h1 class="foundation-h1">
+            <span class="mental">Mental Health</span> Awareness and Education
+          </h1>
+          <p class="p2">
+            The meTherappy Foundation is committed to promoting mental health awareness and education by reaching out to schools, communities, and underserved groups. Our goal is to break the stigma surrounding mental health, provide access to helpful resources, and empower individuals—especially the youth—with the tools and knowledge to prioritize their mental well-being.
+          </p>
+          <div class="foundation-btn">
+            <button class="f-btn1">View More...</button>
+            <button class="f-btn2">Contact-Us</button>
+          </div>
+        </div>
+      </div>
+      <!-- FOUNDATION CONTAINER 2 -->
+      <div class="foundation_container2">
+        <div class="sub_container1">
+          <div class="foundation_image_wrapper">
+              <img src="/images/foundation_image.jpg" alt="Metherappy Foundation Rally 1" class="foundation_img1">
+    
+              <img src="/images/foundation_image1.jpg" alt="Metherappy Foundation Rally 2" class="foundation_img2">
+          </div>
+          <div>
+            <img src="/images/logo.png" alt="" class="f-logo">
+          </div>
+      
+          
+        </div>
+
+        <div class="sub_container2">
+          <p>
+            THE <span class="metherapy">METHERAPPY</span> FOUNDATION (T.M.F)
+          </p>
+
+          <h2>
+            We Are Building The Future Of Tele-health Together, Be With Us
+          </h2>
+
+          <p>
+            The meTherappy Foundation (T.M.F) is the outreach arm of our platform, dedicated to promoting mental health education, early intervention, and community support. Through school visits, public awareness campaigns, and grassroots initiatives, we aim to break the stigma around mental health, empower young people with the tools to thrive emotionally, and make mental wellness accessible to everyone, everywhere.
+          </p>
+          <button style="margin-top: 5px; background: none;">view more...</button>
+          
+
+
+        </div>
+
+
+      </div>
+      <!-- FOUNDATION CONTAINER 3 -->
+      <div class="foundation_container3">
+        <h1 style="text-align: center; margin-bottom: 40px;" >Our Activities</h1>
+        <div class="fcard_cont">
+          <div class="fcard">
+            <h1>30+</h1>
+            <p>Projects</p>
+
+          </div>
+          <div class="fcard">
+            <h1>12</h1>
+            <p>Major Sponsorships</p>
+
+          </div>
+          <div class="fcard">
+            <h1>50+</h1>
+            <p>Therapists</p>
+
+          </div>
+          <div class="fcard">
+            <h1>100%</h1>
+            <p>Client focus</p>
+
+          </div>
+        </div>
+      </div>
+      <!-- FOUNDATION CONTAINER 4 -->
+      <div class="foundation_container4">
+        <h1 style="text-align: center; margin-bottom: 40px; margin-top: 70px;">Some of Our Sponsors</h1>
+        <div class="first-sub-con4">
+          <div class="spons-card">
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/042/055/091/small/childcare-foundation-icon-logo-design-template-vector.jpg" alt="" srcset="">
+          </div>
+          <div class="spons-card">
+            <img src="https://images.squarespace-cdn.com/content/v1/5844c7d6e4fcb5ef4d21ece5/e7065f04-b381-4bb6-8efa-5eef45c697bd/ea_foundation_logo_portait.png" alt="" srcset="">
+          </div>
+          <div class="spons-card">
+            <img src="https://images.squarespace-cdn.com/content/v1/5b5275814eddec4504af8010/5490deeb-af11-4456-b955-3e20ccf09b9a/YEF+Annual+Business+Sponsor+-+White.png" alt="" srcset="">
+          </div>
+          <div class="spons-card">
+            <img src="https://www.thecenterforchildren.org/assets/ContentLayoutImages/Sponsor-logo-template_0016_Hilda-and-Preston-Davis-Foundation.jpg" alt="" srcset="">
+          </div>
+          <div class="spons-card">
+            <img src="https://www.militarypsych.org/wp-content/uploads/full_logo-1024x326.png" alt="" srcset="">
+          </div>
+        </div>
+
+      
+      </div>
+      
+    </main>
+    <footer>
+      <p>
+        <span class="meTherappy"><b>meTherappy</b></span>
+        Your space to heal, grow, and thrive. 🌿 Empowering mental wellness, one
+        step at a time. Connect with us: 📧 support@metherappy.com | 🌐
+        www.metherappy.com Follow us: instagram
+        <i class="fa-brands fa-instagram"></i> X twitter
+        <i class="fa-brands fa-x-twitter"></i> Facebook
+        <i class="fa-brands fa-facebook"></i> LinkedIn
+        <i class="fa-brands fa-linkedin"></i>
+
+        © 2025 meTherappy. All rights reserved.
+        <strong
+          >This platform is not a substitute for professional medical advice,
+          diagnosis, or treatment</strong
+        >
+      </p>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+    <script
+      src="https://kit.fontawesome.com/e514abaf34.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
