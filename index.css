@@ -2297,6 +2297,10 @@ body {
   font-weight: bolder;
   font-size: 25px;
 }
+.sub-p {
+  font-weight: bolder;
+}
+
 .metherapy {
   color: #005f99;
 }
@@ -2400,11 +2404,6 @@ body {
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.353);
   border-radius: 4px;
   cursor: pointer;
-}
-
-.fcard:hover {
-  transform: scale(1.1);
-  transition: 0.4s ease;
 }
 
 .fcard h1 {
