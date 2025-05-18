@@ -2437,11 +2437,8 @@ body {
 .spons-card img:hover {
   transform: scale(1.1);
   transition: 0.7s ease;
+  cursor: pointer;
 }
-
-/* .first-sub-con4 {
-  padding: 0 150px;
-} */
 
 /* Newletter */
 .newsletter-form {
@@ -2495,4 +2492,157 @@ body {
 
 .newsletter-form input[type="submit"]:hover {
   background-color: #ff8533;
+}
+
+.next-arrow {
+  font-size: 30px;
+  position: absolute;
+  right: 200px;
+  margin-top: 50px;
+}
+
+.next-arrow:hover {
+  cursor: pointer;
+  border-bottom: 2px solid black;
+}
+
+
+
+
+
+/* Add these media queries and modifications to your CSS */
+
+/* Base mobile styles (applies to all screens) */
+.foundation-h1 {
+  font-size: 2.5rem; /* Instead of 60px */
+  line-height: 1.2;
+}
+
+.p2 {
+  width: 90%; /* Instead of 1000px */
+  max-width: 1000px;
+  font-size: 1.1rem;
+}
+
+/* Foundation container adjustments */
+.foundation_container2 {
+  flex-direction: column;
+  margin: 4rem 1rem;
+  padding: 0 1rem;
+}
+
+.sub_container2 {
+  width: 100%;
+  padding: 0;
+  order: 1; /* Make text appear first on mobile */
+}
+
+.sub_container1 {
+  order: 2; /* Make images appear after text on mobile */
+  margin-top: 2rem;
+}
+
+/* Image layout adjustments */
+.foundation_image_wrapper {
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.foundation_img1, 
+.foundation_img2 {
+  position: static;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* Cards section */
+.fcard_cont {
+  flex-direction: column;
+  padding: 0 1rem;
+  gap: 1rem;
+}
+
+.fcard {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+/* Sponsors section */
+.first-sub-con4 {
+  grid-template-columns: 1fr;
+}
+
+.spons-card img {
+  width: 150px;
+  height: auto;
+}
+
+/* Newsletter form */
+.newsletter-form {
+  width: 90%;
+  margin: 2rem auto;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+  /* Tablet styles */
+  .foundation_container2 {
+    flex-direction: row;
+    margin: 6rem 2rem;
+  }
+  
+  .sub_container2 {
+    width: 50%;
+    padding-right: 2rem;
+  }
+  
+  .foundation_image_wrapper {
+    flex-direction: row;
+  }
+  
+  .fcard_cont {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .fcard {
+    width: calc(50% - 1rem);
+  }
+}
+
+@media (min-width: 992px) {
+  /* Desktop styles */
+  .foundation_container2 {
+    margin: 8rem 4rem;
+  }
+  
+  .sub_container2 {
+    width: 60%;
+    padding-right: 4rem;
+  }
+  
+  .fcard {
+    width: calc(25% - 1rem);
+  }
+  
+  .first-sub-con4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+  /* Large desktop styles */
+  .foundation_container2 {
+    margin-left: 8rem;
+    margin-right: 8rem;
+  }
+  
+  .sub_container2 {
+    padding-right: 8rem;
+  }
+  
+  .first-sub-con4 {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
