@@ -2020,6 +2020,18 @@ body {
     margin-left: 0;
     width: 100%;
   }
+
+  .foundation_container4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    /* padding-left: 10px; */
+    text-align: center;
+    margin-bottom: 50px;
+    gap: 50px;
+    padding-left: 0px;
+  }
 }
 
 /* DONATION */
@@ -2423,10 +2435,9 @@ body {
 .foundation_container4 {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding-left: 300px;
+  justify-content: center;
   margin-bottom: 50px;
-  gap: 50px;
+  /* gap: 50px; */
 }
 
 .spons-card img {
@@ -2506,10 +2517,6 @@ body {
   border-bottom: 2px solid black;
 }
 
-
-
-
-
 /* Add these media queries and modifications to your CSS */
 
 /* Base mobile styles (applies to all screens) */
@@ -2548,7 +2555,7 @@ body {
   gap: 1rem;
 }
 
-.foundation_img1, 
+.foundation_img1,
 .foundation_img2 {
   position: static;
   width: 100%;
@@ -2591,21 +2598,21 @@ body {
     flex-direction: row;
     margin: 6rem 2rem;
   }
-  
+
   .sub_container2 {
     width: 50%;
     padding-right: 2rem;
   }
-  
+
   .foundation_image_wrapper {
     flex-direction: row;
   }
-  
+
   .fcard_cont {
     flex-direction: row;
     flex-wrap: wrap;
   }
-  
+
   .fcard {
     width: calc(50% - 1rem);
   }
@@ -2616,16 +2623,16 @@ body {
   .foundation_container2 {
     margin: 8rem 4rem;
   }
-  
+
   .sub_container2 {
     width: 60%;
     padding-right: 4rem;
   }
-  
+
   .fcard {
     width: calc(25% - 1rem);
   }
-  
+
   .first-sub-con4 {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -2637,11 +2644,11 @@ body {
     margin-left: 8rem;
     margin-right: 8rem;
   }
-  
+
   .sub_container2 {
     padding-right: 8rem;
   }
-  
+
   .first-sub-con4 {
     grid-template-columns: repeat(3, 1fr);
   }
