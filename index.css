@@ -2111,11 +2111,6 @@ body {
 }
 /* donation card */
 
-.donate_footer {
-  position: fixed;
-  bottom: 0;
-}
-
 /* donation modal */
 
 #donationModal {
