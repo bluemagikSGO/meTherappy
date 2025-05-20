@@ -741,12 +741,12 @@ button:active {
 }
 
 .testimonial-slider p {
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .testimonial {
   display: none;
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: #333;
   transition: opacity 0.5s ease;
 }

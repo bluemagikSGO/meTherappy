@@ -7,7 +7,7 @@ function showNextTestimonial() {
   testimonials[currentIndex].classList.add("active");
 }
 
-setInterval(showNextTestimonial, 3000); // Change every 3 seconds
+setInterval(showNextTestimonial, 2000); // Change every 3 seconds
 
 // FAQ
 
@@ -272,8 +272,20 @@ document.addEventListener("click", function (event) {
 
 // Donation
 // Open Modal
-document.querySelector(".don-btn").addEventListener("click", () => {
-  document.getElementById("donationModal").style.display = "flex";
+// document.querySelector(".don-btn").addEventListener("click", () => {
+//   document.getElementById("donationModal").style.display = "flex";
+// });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const donateButton = document.querySelector(".don-btn");
+  if (donateButton) {
+    donateButton.addEventListener("click", () => {
+      const modal = document.getElementById("donationModal");
+      if (modal) {
+        modal.style.display = "flex";
+      }
+    });
+  }
 });
 
 // Close Modal
