@@ -306,3 +306,5 @@ window.addEventListener("keydown", (event) => {
     closeModal();
   }
 });
+
+// Appointments

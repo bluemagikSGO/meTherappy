@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Appointments</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Upcoming Appointments -->
+    <section class="appointments-section">
+      <div class="section-header">
+        <h2>Appointments</h2>
+        <div class="appointment-actions">
+          <button class="btn primary" id="new-appointment-btn">
+            <i class="fas fa-plus"></i> New Appointment
+          </button>
+          <a href="#" class="view-all">View All</a>
+        </div>
+      </div>
+
+      <!-- Appointment Tabs -->
+      <div class="appointment-tabs">
+        <button class="tab-btn active" data-tab="upcoming">Upcoming</button>
+        <button class="tab-btn" data-tab="past">Past</button>
+        <button class="tab-btn" data-tab="cancelled">Cancelled</button>
+      </div>
+
+      <!-- Upcoming Appointments Tab Content -->
+      <div class="tab-content active" id="upcoming-tab">
+        <div class="appointments-list">
+          <div class="appointment-card">
+            <div class="appointment-info">
+              <div class="therapist-avatar">
+                <img src="images/therapist1.jpg" alt="Dr. Sarah Kim" />
+                <span class="status-badge confirmed">Confirmed</span>
+              </div>
+              <div class="appointment-details">
+                <h3>Dr. Sarah Kim</h3>
+                <p>Clinical Psychologist</p>
+                <div class="appointment-time">
+                  <i class="fas fa-clock"></i>
+                  <span>Tomorrow, 2:00 PM - 3:00 PM</span>
+                  <span class="duration">60 min</span>
+                </div>
+                <div class="appointment-notes">
+                  <i class="fas fa-sticky-note"></i>
+                  <span>Follow-up on anxiety management techniques</span>
+                </div>
+              </div>
+            </div>
+            <div class="appointment-actions">
+              <button class="btn primary join-btn">
+                <i class="fas fa-video"></i> Join
+              </button>
+              <button class="btn secondary reschedule-btn">
+                <i class="fas fa-calendar-alt"></i> Reschedule
+              </button>
+              <button class="btn danger cancel-btn">
+                <i class="fas fa-times"></i> Cancel
+              </button>
+            </div>
+          </div>
+          <div class="appointment-card">
+            <div class="appointment-info">
+              <div class="therapist-avatar">
+                <img src="images/therapist2.jpg" alt="Michael Rhodes" />
+                <span class="status-badge pending">Pending</span>
+              </div>
+              <div class="appointment-details">
+                <h3>Michael Rhodes</h3>
+                <p>Relationship Therapist</p>
+                <div class="appointment-time">
+                  <i class="fas fa-clock"></i>
+                  <span>Friday, 10:00 AM - 11:00 AM</span>
+                  <span class="duration">60 min</span>
+                </div>
+                <div class="appointment-notes">
+                  <i class="fas fa-sticky-note"></i>
+                  <span>Initial consultation</span>
+                </div>
+              </div>
+            </div>
+            <div class="appointment-actions">
+              <button class="btn primary join-btn" disabled>
+                <i class="fas fa-video"></i> Join
+              </button>
+              <button class="btn secondary reschedule-btn">
+                <i class="fas fa-calendar-alt"></i> Reschedule
+              </button>
+              <button class="btn danger cancel-btn">
+                <i class="fas fa-times"></i> Cancel
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Past Appointments Tab Content -->
+      <div class="tab-content" id="past-tab">
+        <div class="appointments-list">
+          <div class="appointment-card past">
+            <div class="appointment-info">
+              <div class="therapist-avatar">
+                <img src="images/therapist3.jpg" alt="Dr. Aisha Bello" />
+                <span class="status-badge completed">Completed</span>
+              </div>
+              <div class="appointment-details">
+                <h3>Dr. Aisha Bello</h3>
+                <p>Trauma Specialist</p>
+                <div class="appointment-time">
+                  <i class="fas fa-clock"></i>
+                  <span>June 15, 2023, 3:00 PM - 4:00 PM</span>
+                  <span class="duration">60 min</span>
+                </div>
+                <div class="appointment-notes">
+                  <i class="fas fa-sticky-note"></i>
+                  <span>Discussed childhood trauma exercises</span>
+                </div>
+              </div>
+            </div>
+            <div class="appointment-actions">
+              <button class="btn primary">
+                <i class="fas fa-file-alt"></i> View Notes
+              </button>
+              <button class="btn secondary">
+                <i class="fas fa-redo"></i> Rebook
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cancelled Appointments Tab Content -->
+      <div class="tab-content" id="cancelled-tab">
+        <div class="appointments-list">
+          <div class="appointment-card cancelled">
+            <div class="appointment-info">
+              <div class="therapist-avatar">
+                <img src="images/therapist4.jpg" alt="Dr. James Wilson" />
+                <span class="status-badge cancelled">Cancelled</span>
+              </div>
+              <div class="appointment-details">
+                <h3>Dr. James Wilson</h3>
+                <p>Addiction Specialist</p>
+                <div class="appointment-time">
+                  <i class="fas fa-clock"></i>
+                  <span>May 28, 2023, 11:00 AM - 12:00 PM</span>
+                  <span class="duration">60 min</span>
+                </div>
+                <div class="appointment-notes">
+                  <i class="fas fa-sticky-note"></i>
+                  <span>Cancelled by therapist</span>
+                </div>
+              </div>
+            </div>
+            <div class="appointment-actions">
+              <button class="btn primary">
+                <i class="fas fa-calendar-alt"></i> Reschedule
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- New Appointment Modal -->
+    <div class="modal-overlay" id="appointment-modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>Schedule New Appointment</h3>
+          <button class="close-modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <form id="appointment-form">
+            <div class="form-group">
+              <label for="therapist-select">Select Therapist</label>
+              <select id="therapist-select" required>
+                <option value="">-- Select Therapist --</option>
+                <option value="1">Dr. Sarah Kim - Clinical Psychologist</option>
+                <option value="2">
+                  Michael Rhodes - Relationship Therapist
+                </option>
+                <option value="3">Dr. Aisha Bello - Trauma Specialist</option>
+                <option value="4">
+                  Dr. James Wilson - Addiction Specialist
+                </option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="appointment-date">Date</label>
+              <input type="date" id="appointment-date" required />
+            </div>
+
+            <div class="form-group">
+              <label for="appointment-time">Time</label>
+              <input type="time" id="appointment-time" required />
+            </div>
+
+            <div class="form-group">
+              <label for="session-type">Session Type</label>
+              <select id="session-type" required>
+                <option value="">-- Select Session Type --</option>
+                <option value="video">Video Call</option>
+                <option value="phone">Phone Call</option>
+                <option value="in-person">In-Person</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="session-duration">Duration</label>
+              <select id="session-duration" required>
+                <option value="30">30 minutes</option>
+                <option value="45">45 minutes</option>
+                <option value="60" selected>60 minutes</option>
+                <option value="90">90 minutes</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="appointment-notes">Notes (Optional)</label>
+              <textarea
+                id="appointment-notes"
+                rows="3"
+                placeholder="Any specific concerns or topics you'd like to discuss..."
+              ></textarea>
+            </div>
+
+            <div class="form-actions">
+              <button type="button" class="btn secondary close-modal">
+                Cancel
+              </button>
+              <button type="submit" class="btn primary">
+                Schedule Appointment
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="appointments.js"></script>
+    <script
+      src="https://kit.fontawesome.com/e514abaf34.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
