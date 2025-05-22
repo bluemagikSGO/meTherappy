@@ -563,12 +563,12 @@ button:active {
   }
 
   #acardd .acard {
-    padding: 0px 10px;
+    padding: 0px 0px !important;
   }
 
   /* If you want to adjust the text size in cards on mobile */
-  .acard h1 {
-    font-size: 1rem; /* Adjust heading size */
+  #acardd .acard h1 {
+    font-size: 3rem; /* Adjust heading size */
   }
 
   .acard p {
