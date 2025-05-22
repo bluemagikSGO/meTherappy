@@ -548,6 +548,32 @@ button:active {
   .testimonial-slider {
     font-size: 12px !important;
   }
+
+  .acard_cont {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Add some spacing between cards */
+    padding: 15px; /* Reduce padding on mobile */
+  }
+
+  #acardd {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #f4faff !important;
+  }
+
+  #acardd .acard {
+    padding: 0px 10px;
+  }
+
+  /* If you want to adjust the text size in cards on mobile */
+  .acard h1 {
+    font-size: 1rem; /* Adjust heading size */
+  }
+
+  .acard p {
+    font-size: 1.1rem; /* Adjust paragraph size */
+  }
 }
 
 /* slider images */
@@ -2395,11 +2421,24 @@ body {
   justify-content: space-between;
   padding: 0 150px;
 }
+.acard_cont {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 150px;
+}
 
 .fcard {
   width: 200px;
   height: auto;
-  background-color: white;
+  text-align: center;
+  padding: 30px 5px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.353);
+  border-radius: 4px;
+  cursor: pointer;
+}
+.acard {
+  width: 200px;
+  height: auto;
   text-align: center;
   padding: 30px 5px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.353);
@@ -2414,6 +2453,13 @@ body {
 .fcard p {
   font-size: 20px;
 }
+.acard h1 {
+  font-size: 50px;
+  color: #005f99;
+}
+.acard p {
+  font-size: 20px;
+}
 
 .first-sub-con4 {
   display: grid;
@@ -2426,6 +2472,81 @@ body {
   align-items: center;
   justify-content: center;
   margin-bottom: 50px;
+}
+
+.therapist-cta {
+  display: flex;
+  flex-wrap: wrap;
+
+  padding: 1rem 1rem;
+  border-radius: 12px;
+  align-items: center;
+  gap: 2rem;
+  margin: 2rem auto;
+}
+
+.therapist-content {
+  flex: 1;
+  min-width: 280px;
+}
+
+.therapist-content h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #005f99;
+}
+
+.therapist-content p {
+  font-size: 1.5rem;
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+.perks-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 2rem;
+}
+
+.perks-list li {
+  margin-bottom: 0.8rem;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: #333;
+}
+
+.perks-list i {
+  color: #005f99;
+}
+
+.btn-primary {
+  background-color: #005f99;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #1f79b2;
+}
+
+.therapist-image {
+  flex: 1;
+  text-align: center;
+  min-width: 280px;
+}
+
+.therapist-image img {
+  max-width: 25rem;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 @media (min-width: 992px) {
