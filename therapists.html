@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Therapists - meTherappy</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="therapists-container">
+      <header class="therapists-header">
+        <h1>Our Therapists</h1>
+        <p>
+          Browse professional therapists ready to support your wellness journey
+        </p>
+      </header>
+
+      <section class="therapist-grid" id="therapistGrid">
+        <!-- Therapist profiles will be injected by JS -->
+      </section>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        const therapists = [
+          {
+            name: "Dr. Sarah Kim",
+            title: "Clinical Psychologist",
+            specialty: "Anxiety & CBT",
+            image: "images/therapist1.jpg",
+          },
+          {
+            name: "Dr. Aisha Bello",
+            title: "Trauma Specialist",
+            specialty: "PTSD & Recovery",
+            image: "images/therapist3.jpg",
+          },
+          {
+            name: "Michael Rhodes",
+            title: "Relationship Therapist",
+            specialty: "Couples & Conflict",
+            image: "images/therapist2.jpg",
+          },
+          {
+            name: "Dr. Sarah Kim",
+            title: "Clinical Psychologist",
+            specialty: "Anxiety & CBT",
+            image: "images/therapist1.jpg",
+          },
+          {
+            name: "Dr. Aisha Bello",
+            title: "Trauma Specialist",
+            specialty: "PTSD & Recovery",
+            image: "images/therapist3.jpg",
+          },
+          {
+            name: "Michael Rhodes",
+            title: "Relationship Therapist",
+            specialty: "Couples & Conflict",
+            image: "images/therapist2.jpg",
+          },
+          {
+            name: "Dr. Sarah Kim",
+            title: "Clinical Psychologist",
+            specialty: "Anxiety & CBT",
+            image: "images/therapist1.jpg",
+          },
+          {
+            name: "Dr. Aisha Bello",
+            title: "Trauma Specialist",
+            specialty: "PTSD & Recovery",
+            image: "images/therapist3.jpg",
+          },
+          {
+            name: "Michael Rhodes",
+            title: "Relationship Therapist",
+            specialty: "Couples & Conflict",
+            image: "images/therapist2.jpg",
+          },
+          {
+            name: "Michael Rhodes",
+            title: "Relationship Therapist",
+            specialty: "Couples & Conflict",
+            image: "images/therapist2.jpg",
+          },
+          {
+            name: "Michael Rhodes",
+            title: "Relationship Therapist",
+            specialty: "Couples & Conflict",
+            image: "images/therapist2.jpg",
+          },
+          {
+            name: "Michael Rhodes",
+            title: "Relationship Therapist",
+            specialty: "Couples & Conflict",
+            image: "images/therapist2.jpg",
+          },
+          {
+            name: "Michael Rhodes",
+            title: "Relationship Therapist",
+            specialty: "Couples & Conflict",
+            image: "images/therapist2.jpg",
+          },
+          {
+            name: "Michael Rhodes",
+            title: "Relationship Therapist",
+            specialty: "Couples & Conflict",
+            image: "images/therapist2.jpg",
+          },
+          {
+            name: "Michael Rhodes",
+            title: "Relationship Therapist",
+            specialty: "Couples & Conflict",
+            image: "images/therapist2.jpg",
+          },
+          {
+            name: "Michael Rhodes",
+            title: "Relationship Therapist",
+            specialty: "Couples & Conflict",
+            image: "images/therapist2.jpg",
+          },
+          {
+            name: "Michael Rhodes",
+            title: "Relationship Therapist",
+            specialty: "Couples & Conflict",
+            image: "images/therapist2.jpg",
+          },
+          {
+            name: "Michael Rhodes",
+            title: "Relationship Therapist",
+            specialty: "Couples & Conflict",
+            image: "images/therapist2.jpg",
+          },
+          {
+            name: "Michael Rhodes",
+            title: "Relationship Therapist",
+            specialty: "Couples & Conflict",
+            image: "images/therapist2.jpg",
+          },
+          {
+            name: "Michael Rhodes",
+            title: "Relationship Therapist",
+            specialty: "Couples & Conflict",
+            image: "images/therapist2.jpg",
+          },
+          {
+            name: "Michael Rhodes",
+            title: "Relationship Therapist",
+            specialty: "Couples & Conflict",
+            image: "images/therapist2.jpg",
+          },
+          {
+            name: "Michael Rhodes",
+            title: "Relationship Therapist",
+            specialty: "Couples & Conflict",
+            image: "images/therapist2.jpg",
+          },
+          {
+            name: "Michael Rhodes",
+            title: "Relationship Therapist",
+            specialty: "Couples & Conflict",
+            image: "images/therapist2.jpg",
+          },
+          {
+            name: "Michael Rhodes",
+            title: "Relationship Therapist",
+            specialty: "Couples & Conflict",
+            image: "images/therapist2.jpg",
+          },
+          {
+            name: "Michael Rhodes",
+            title: "Relationship Therapist",
+            specialty: "Couples & Conflict",
+            image: "images/therapist2.jpg",
+          },
+          {
+            name: "Michael Rhodes",
+            title: "Relationship Therapist",
+            specialty: "Couples & Conflict",
+            image: "images/therapist2.jpg",
+          },
+          {
+            name: "Michael Rhodes",
+            title: "Relationship Therapist",
+            specialty: "Couples & Conflict",
+            image: "images/therapist2.jpg",
+          },
+          {
+            name: "Michael Rhodes",
+            title: "Relationship Therapist",
+            specialty: "Couples & Conflict",
+            image: "images/therapist2.jpg",
+          },
+          {
+            name: "Michael Rhodes",
+            title: "Relationship Therapist",
+            specialty: "Couples & Conflict",
+            image: "images/therapist2.jpg",
+          },
+          {
+            name: "Michael Rhodes",
+            title: "Relationship Therapist",
+            specialty: "Couples & Conflict",
+            image: "images/therapist2.jpg",
+          },
+          {
+            name: "Michael Rhodes",
+            title: "Relationship Therapist",
+            specialty: "Couples & Conflict",
+            image: "images/therapist2.jpg",
+          },
+          {
+            name: "Michael Rhodes",
+            title: "Relationship Therapist",
+            specialty: "Couples & Conflict",
+            image: "images/therapist2.jpg",
+          },
+          {
+            name: "Michael Rhodes",
+            title: "Relationship Therapist",
+            specialty: "Couples & Conflict",
+            image: "images/therapist2.jpg",
+          },
+          {
+            name: "Michael Rhodes",
+            title: "Relationship Therapist",
+            specialty: "Couples & Conflict",
+            image: "images/therapist2.jpg",
+          },
+        ];
+
+        const grid = $("#therapistGrid");
+
+        therapists.forEach((t) => {
+          const card = `
+      <div class="therapist-card">
+        <img src="${t.image}" alt="${t.name}" />
+        <h3>${t.name}</h3>
+        <p>${t.title}</p>
+        <p class="specialty">${t.specialty}</p>
+      </div>
+    `;
+          grid.append(card);
+        });
+      });
+    </script>
+  </body>
+</html>

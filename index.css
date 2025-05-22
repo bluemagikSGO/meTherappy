@@ -3174,3 +3174,143 @@ body {
     justify-content: center;
   }
 }
+
+/* messages */
+
+.messages-container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.messages-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.messages-header h1 {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+  color: #4b3f72;
+}
+
+.messages-header p {
+  color: #666;
+  font-size: 1rem;
+}
+
+.message-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.message-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.message-info {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.message-info img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.message-meta {
+  display: flex;
+  flex-direction: column;
+}
+
+.message-meta h3 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.message-meta p {
+  margin: 0.3rem 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.message-preview {
+  font-size: 0.9rem;
+  color: #444;
+  max-width: 350px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/* therapists */
+
+.therapists-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.therapists-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.therapists-header h1 {
+  font-size: 2.5rem;
+  color: #4b3f72;
+}
+
+.therapists-header p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.therapist-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.therapist-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.therapist-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 0.8rem;
+}
+
+.therapist-card h3 {
+  margin: 0.5rem 0 0.2rem;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.therapist-card p {
+  font-size: 0.95rem;
+  color: #666;
+}
+
+.therapist-card .specialty {
+  font-style: italic;
+  margin-top: 0.4rem;
+  color: #6c5ce7;
+}

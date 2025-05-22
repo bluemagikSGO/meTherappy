@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Messages - meTherappy</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="messages-container">
+      <header class="messages-header">
+        <h1>Your Messages</h1>
+        <p>Stay connected with your therapists in real time</p>
+      </header>
+
+      <section class="message-list" id="messageList">
+        <!-- Messages will be inserted by JS -->
+      </section>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        const messages = [
+          {
+            name: "Dr. Sarah Kim",
+            title: "Clinical Psychologist",
+            time: "2 hours ago",
+            preview:
+              "Hi Steve, I wanted to follow up on our last session. How have you been feeling?",
+            image: "images/therapist1.jpg",
+          },
+          {
+            name: "Dr. Aisha Bello",
+            title: "Trauma Specialist",
+            time: "1 day ago",
+            preview:
+              "You're making great progress! Let's discuss some next steps in our next session.",
+            image: "images/therapist3.jpg",
+          },
+        ];
+
+        const container = $("#messageList");
+
+        messages.forEach((msg) => {
+          const card = `
+      <div class="message-card">
+        <div class="message-info">
+          <img src="${msg.image}" alt="${msg.name}" />
+          <div class="message-meta">
+            <h3>${msg.name}</h3>
+            <p>${msg.title} • ${msg.time}</p>
+          </div>
+        </div>
+        <div class="message-preview">
+          ${msg.preview}
+        </div>
+      </div>
+    `;
+          container.append(card);
+        });
+      });
+    </script>
+  </body>
+</html>
