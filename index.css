@@ -2811,6 +2811,7 @@ body {
 /* Appointment Tabs */
 .appointment-tabs {
   display: flex;
+  gap: 5px;
   border-bottom: 1px solid #eee;
   margin-bottom: 20px;
 }
