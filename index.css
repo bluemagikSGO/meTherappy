@@ -2770,6 +2770,41 @@ body {
   }
 }
 
+@media (max-width: 370px) {
+  #thera-img {
+    max-width: 20rem !important;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  .donate-image {
+    max-width: 20rem;
+  }
+
+  .btn-don-cont {
+    width: 200px !important;
+  }
+  .don-cont .don-left {
+    font-size: 30px !important;
+  }
+
+  #foundation-cont img {
+    max-width: 19rem;
+  }
+
+  /* #mood-picker {
+    max-width: 180px !important;
+  } */
+
+  #mood-picker .mood-btn {
+    font-size: 1rem;
+  }
+
+  .appointment-tabs button {
+    font-size: 1rem;
+  }
+}
+
 /* appointment */
 /* Appointments Section */
 .appointments-section {
